@@ -3,7 +3,7 @@ services:
   irc:
     build: .
     ports:
-      - "22:22"
+      - "2222:22"
     environment:
       - TZ=Pacific/Auckland
       - USERNAME=user
