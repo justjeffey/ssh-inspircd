@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
   inspircd \
   sudo
 
-# Install english language
 RUN sed -ri 's/^(# )?(en_US)(.+)( UTF-8)$/\2\3\4/' /etc/locale.gen \
  && locale-gen
   
