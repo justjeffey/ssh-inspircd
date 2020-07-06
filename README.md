@@ -6,13 +6,13 @@ A username and password must be specified as environment variables, this is the 
 
 You will be prompted to change the password on first login.
 
-By defaults it connects to the #general channel.
+By default it connects to the #general channel.
 
 ## Usage
 
 docker
 ```bash
-$ docker run --name ircd -p 6667:6667 inspircd/inspircd-docker
+$ docker run -e USERNAME=user -e PASSWORD=pass -p 2222:22 justjeffey/ssh-inspircd
 ```
 
 docker-compose
