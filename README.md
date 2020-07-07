@@ -22,7 +22,7 @@ services:
   irc:
     build: justjeffey/ssh-inspircd
     ports:
-      - "22:22"
+      - "2222:22"
     environment:
       - TZ=Pacific/Auckland
       - USERNAME=user
